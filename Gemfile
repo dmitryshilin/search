@@ -37,4 +37,4 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 gem 'tire'
-gem 'thinking-sphinx', '3.0.0'
+#gem 'thinking-sphinx', '3.0.0'
