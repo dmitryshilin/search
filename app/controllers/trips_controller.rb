@@ -2,7 +2,11 @@ class TripsController < ApplicationController
   # GET /trips
   # GET /trips.json
   def index
-    @trips = Trip.all
+    if params[:query].present?
+      @trips = Trip.search(params[:query])
+    else
+      @trips = Trip.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb
